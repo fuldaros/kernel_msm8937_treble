@@ -1,0 +1,11 @@
+--- drivers/media/platform/msm/camera_v2/ispif/msm_ispif.c
++++ drivers/media/platform/msm/camera_v2/ispif/msm_ispif.c
+@@ -65,7 +65,7 @@ static void msm_ispif_io_dump_reg(struct ispif_device *ispif)
+ {
+ 	if (!ispif->enb_dump_reg)
+ 		return;
+-	msm_camera_io_dump(ispif->base, 0x250);
++	msm_camera_io_dump(ispif->base, 0x250, 0);
+ }
+ 
+ 
